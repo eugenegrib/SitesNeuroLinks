@@ -1,95 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    />
+
     <title>Galileo Design</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-800 font-poppins">
-    <header class="bg-white shadow-md p-4 flex justify-between items-center">
-        <img src="logo.png" alt="Logo" class="w-12 h-12">
-        <h1 class="text-lg font-semibold">AI Tools</h1>
-    </header>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
 
-    <main class="container mx-auto p-4">
-        <section class="text-center mb-8">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">AI tools to help you build better products</h2>
-            <div class="flex justify-center items-center mx-auto max-w-md">
-                <input type="text" placeholder="Search tools..." class="w-full p-2 rounded-l-md border focus:outline-none">
-                <button class="bg-blue-500 text-white p-2 rounded-r-md">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 18l6-6m0 0l-6-6m6 6H3"></path>
-                    </svg>
-                </button>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body>
+    <div class="relative flex size-full min-h-screen flex-col bg-white justify-between group/design-root overflow-x-hidden" style='font-family: Inter, "Noto Sans", sans-serif;'>
+      <div>
+        <div class="flex items-center bg-white p-4 pb-2 justify-end">
+          <div class="flex w-12 items-center justify-end">
+            <button
+              class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 bg-transparent text-[#111418] gap-2 text-base font-bold leading-normal tracking-[0.015em] min-w-0 p-0"
+            >
+              <div class="text-[#111418]" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                  <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+                </svg>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="pb-3">
+          <div class="flex border-b border-[#dce0e5] px-4 gap-8">
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#111418] text-[#111418] pb-[13px] pt-4" href="#">
+              <p class="text-[#111418] text-sm font-bold leading-normal tracking-[0.015em]">Trending AI Tools</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4" href="#">
+              <p class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em]">Popular Neural Networks</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent text-[#637588] pb-[13px] pt-4" href="#">
+              <p class="text-[#637588] text-sm font-bold leading-normal tracking-[0.015em]">Latest Datasets</p>
+            </a>
+          </div>
+        </div>
+        <div class="p-4 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/stability/780b992c-b331-4666-9f22-5cc6a006d49c.png");'
+            ></div>
+            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+              <p class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">OpenAI ChatGPT</p>
+              <div class="flex items-end gap-3 justify-between"><p class="text-[#637588] text-base font-normal leading-normal">Chatbot</p></div>
             </div>
-        </section>
-
-        <section>
-            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <svg class="w-12 h-12 mb-4 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2 4 4L21 4"></path>
-                    </svg>
-                    <h3 class="text-lg font-semibold text-center">Product Management</h3>
-                    <p class="text-sm text-gray-600 text-center">3 Tools</p>
+          </div>
+        </div>
+        <div class="p-4 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/stability/2c084cd1-1d89-47e3-bbcb-285fad795095.png");'
+            ></div>
+            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+              <p class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Google BigQuery</p>
+              <div class="flex items-end gap-3 justify-between">
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#637588] text-base font-normal leading-normal">Data warehouse</p>
+                  <p class="text-[#637588] text-base font-normal leading-normal">Best in class</p>
                 </div>
-
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <svg class="w-12 h-12 mb-4 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2 4 4L21 4"></path>
-                    </svg>
-                    <h3 class="text-lg font-semibold text-center">Marketing</h3>
-                    <p class="text-sm text-gray-600 text-center">5 Tools</p>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <svg class="w-12 h-12 mb-4 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2 4 4L21 4"></path>
-                    </svg>
-                    <h3 class="text-lg font-semibold text-center">Design</h3>
-                    <p class="text-sm text-gray-600 text-center">8 Tools</p>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <svg class="w-12 h-12 mb-4 mx-auto text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2 4 4L21 4"></path>
-                    </svg>
-                    <h3 class="text-lg font-semibold text-center">Development</h3>
-                    <p class="text-sm text-gray-600 text-center">6 Tools</p>
-                </div>
+              </div>
             </div>
-        </section>
-
-        <section class="mt-8">
-            <h2 class="text-xl font-semibold mb-4">Featured AI Tools</h2>
-            <div class="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <img src="chatgpt.png" alt="ChatGPT" class="w-full h-32 object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">ChatGPT</h3>
-                    <p class="text-sm text-gray-600">OpenAI's conversational model.</p>
+          </div>
+        </div>
+        <div class="p-4 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/7193ad31-2a1b-4db5-bff2-99e4cfa96a45.png");'
+            ></div>
+            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+              <p class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">OpenAI Codex</p>
+              <div class="flex items-end gap-3 justify-between">
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#637588] text-base font-normal leading-normal">AI programming</p>
+                  <p class="text-[#637588] text-base font-normal leading-normal">New</p>
                 </div>
-
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <img src="openai.png" alt="OpenAI" class="w-full h-32 object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">OpenAI</h3>
-                    <p class="text-sm text-gray-600">Cutting-edge AI research and tools.</p>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <img src="scaleai.png" alt="Scale AI" class="w-full h-32 object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">Scale AI</h3>
-                    <p class="text-sm text-gray-600">Data labeling and AI training tools.</p>
-                </div>
-
-                <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition">
-                    <img src="runwayml.png" alt="RunwayML" class="w-full h-32 object-cover rounded-lg mb-4">
-                    <h3 class="text-lg font-semibold">RunwayML</h3>
-                    <p class="text-sm text-gray-600">Creative tools powered by AI.</p>
-                </div>
+              </div>
             </div>
-        </section>
-    </main>
-</body>
+          </div>
+        </div>
+        <div class="p-4 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/6dbeaef2-b8eb-4c05-aef5-9095004c1b03.png");'
+            ></div>
+            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+              <p class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">Amazon SageMaker</p>
+              <div class="flex items-end gap-3 justify-between">
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#637588] text-base font-normal leading-normal">ML platform</p>
+                  <p class="text-[#637588] text-base font-normal leading-normal">AWS</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-4 @container">
+          <div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start">
+            <div
+              class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl"
+              style='background-image: url("https://cdn.usegalileo.ai/sdxl10/2f0b6f36-2335-427e-9ed3-85493aa19b1c.png");'
+            ></div>
+            <div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-1 py-4 @xl:px-4">
+              <p class="text-[#111418] text-lg font-bold leading-tight tracking-[-0.015em]">TensorFlow</p>
+              <div class="flex items-end gap-3 justify-between">
+                <div class="flex flex-col gap-1">
+                  <p class="text-[#637588] text-base font-normal leading-normal">Machine Learning</p>
+                  <p class="text-[#637588] text-base font-normal leading-normal">Deep learning</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-2 border-t border-[#f0f2f4] bg-white px-4 pb-3 pt-2">
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-[#111418]" href="#">
+            <div class="text-[#111418] flex h-8 items-center justify-center" data-icon="House" data-size="24px" data-weight="fill">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#111418] text-xs font-medium leading-normal tracking-[0.015em]">Home</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]" href="#">
+            <div class="text-[#637588] flex h-8 items-center justify-center" data-icon="Buildings" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M240,208H224V96a16,16,0,0,0-16-16H144V32a16,16,0,0,0-24.88-13.32L39.12,72A16,16,0,0,0,32,85.34V208H16a8,8,0,0,0,0,16H240a8,8,0,0,0,0-16ZM208,96V208H144V96ZM48,85.34,128,32V208H48ZM112,112v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm-32,0v16a8,8,0,0,1-16,0V112a8,8,0,1,1,16,0Zm0,56v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Zm32,0v16a8,8,0,0,1-16,0V168a8,8,0,0,1,16,0Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]">AI Companies</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]" href="#">
+            <div class="text-[#637588] flex h-8 items-center justify-center" data-icon="Circuitry" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM88,160a8,8,0,1,1-8,8A8,8,0,0,1,88,160ZM48,48H80v97.38a24,24,0,1,0,16,0V115.31l48,48V208H48ZM208,208H160V160a8,8,0,0,0-2.34-5.66L96,92.69V48h32V72a8,8,0,0,0,2.34,5.66l16,16A23.74,23.74,0,0,0,144,104a24,24,0,1,0,24-24,23.74,23.74,0,0,0-10.34,2.35L144,68.69V48h64V208ZM168,96a8,8,0,1,1-8,8A8,8,0,0,1,168,96Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]">Neural Networks</p>
+          </a>
+          <a class="just flex flex-1 flex-col items-center justify-end gap-1 text-[#637588]" href="#">
+            <div class="text-[#637588] flex h-8 items-center justify-center" data-icon="Database" data-size="24px" data-weight="regular">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="currentColor" viewBox="0 0 256 256">
+                <path
+                  d="M128,24C74.17,24,32,48.6,32,80v96c0,31.4,42.17,56,96,56s96-24.6,96-56V80C224,48.6,181.83,24,128,24Zm80,104c0,9.62-7.88,19.43-21.61,26.92C170.93,163.35,150.19,168,128,168s-42.93-4.65-58.39-13.08C55.88,147.43,48,137.62,48,128V111.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64ZM69.61,53.08C85.07,44.65,105.81,40,128,40s42.93,4.65,58.39,13.08C200.12,60.57,208,70.38,208,80s-7.88,19.43-21.61,26.92C170.93,115.35,150.19,120,128,120s-42.93-4.65-58.39-13.08C55.88,99.43,48,89.62,48,80S55.88,60.57,69.61,53.08ZM186.39,202.92C170.93,211.35,150.19,216,128,216s-42.93-4.65-58.39-13.08C55.88,195.43,48,185.62,48,176V159.36c17.06,15,46.23,24.64,80,24.64s62.94-9.68,80-24.64V176C208,185.62,200.12,195.43,186.39,202.92Z"
+                ></path>
+              </svg>
+            </div>
+            <p class="text-[#637588] text-xs font-medium leading-normal tracking-[0.015em]">Datasets</p>
+          </a>
+        </div>
+        <div class="h-5 bg-white"></div>
+      </div>
+    </div>
+  </body>
 </html>
